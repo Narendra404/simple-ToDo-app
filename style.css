@@ -1,36 +1,39 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-  }
-  
-  #taskInput {
+}
+
+#taskInput {
     width: 60%;
     padding: 10px;
-  }
-  
-  #addTaskBtn {
+}
+
+#addTaskBtn {
     padding: 10px;
     cursor: pointer;
-  }
-  
-  #taskList {
+}
+
+#taskList {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .taskItem {
+}
+
+.taskItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
     margin: 5px 0;
     padding: 10px;
-  }
-  
-  .deleteTaskBtn {
+}
+
+.deleteTaskBtn {
     background-color: #ff6666;
     color: #fff;
     padding: 5px 10px;
     cursor: pointer;
-  }
-  
+}
+
+.header {
+    color: #ffffff;
+}
