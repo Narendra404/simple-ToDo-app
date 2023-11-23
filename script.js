@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (taskText !== '') {
       // Create a task item
       var taskItem = document.createElement('li');
-      taskItem.className = 'taskItem';
+      taskItem.className = 'list-group-item d-flex justify-content-between align-items-center';
   
       // Create a delete button
       var deleteButton = document.createElement('button');
-      deleteButton.className = 'deleteTaskBtn';
+      deleteButton.className = 'btn btn-danger btn-sm';
       deleteButton.textContent = 'Delete';
       deleteButton.onclick = function () {
         // Remove the task from the list and update local storage
@@ -25,7 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
       };
   
       // Append task text and delete button to the task item
-      taskItem.textContent = taskText;
+      var taskTextSpan = document.createElement('span');
+      taskTextSpan.textContent = taskText;
+  
+      taskItem.appendChild(taskTextSpan);
       taskItem.appendChild(deleteButton);
   
       // Append the task item to the task list
@@ -38,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
       updateLocalStorage();
     }
   }
+  
   
   function updateLocalStorage() {
     var taskList = document.getElementById('taskList');
