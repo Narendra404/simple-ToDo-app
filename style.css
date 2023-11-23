@@ -37,3 +37,14 @@ body {
 .header {
     color: #ffffff;
 }
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#background-container {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

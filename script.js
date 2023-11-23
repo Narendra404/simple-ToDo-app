@@ -140,6 +140,7 @@ function updateBackgroundImage(imageUrl) {
   // Example: Set the background image of a container with ID 'background-container'
   var backgroundImageContainer = document.getElementById('background-container');
   backgroundImageContainer.style.backgroundImage = `url(${imageUrl})`;
-  backgroundImageContainer.style.backgroundSize = '120%';
+  backgroundImageContainer.style.backgroundSize = 'cover';
+  backgroundImageContainer.style.backgroundRepeat = 'no-repeat';
   backgroundImageContainer.style.backgroundPosition = 'center';
 }
